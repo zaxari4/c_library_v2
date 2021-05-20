@@ -5755,6 +5755,15 @@
       <field type="uint8_t" name="new_orientation" enum="MAV_SENSOR_ORIENTATION">orientation after calibration.</field>
       <field type="float" name="scale_factor">field radius correction factor</field>
     </message>
+    <!-- Sprayer message -->
+    <message id="197" name="SPRAYER_STATUS">
+      <description>Sprayer status message</description>
+      <field type="uint8_t" name="enabled">On/Off status</field>
+      <field type="uint8_t" name="power">Current working power</field>
+      <field type="uint8_t" name="tank_level">Liquid level in the tank</field>
+      <field type="uint16_t" name="flow_rate">Current liquid flow rate</field>
+      <field type="uint32_t" name="total_ml">Total amount of sprayed liquid in milliliters</field>
+    </message>
     <!-- 225 EFI_STATUS imported from ardupilotmega.xml -->
     <message id="225" name="EFI_STATUS">
       <description>EFI status output</description>
