@@ -1452,6 +1452,15 @@
       <field type="float" name="cross_track_error" units="m">Deepstall cross track error (only valid when in DEEPSTALL_STAGE_LAND).</field>
       <field type="uint8_t" name="stage" enum="DEEPSTALL_STAGE">Deepstall stage.</field>
     </message>
+    <!-- Sprayer message -->
+    <message id="197" name="SPRAYER_STATUS">
+    	<description>Sprayer status data</description>
+        <field type="uint8_t" name="enabled">On/Off status</field>
+        <field type="uint8_t" name="power">Current working power</field>
+        <field type="uint8_t" name="tank_level">Liquid level in the tank</field>
+        <field type="uint16_t" name="flow_rate">Current liquid flow rate</field>
+        <field type="uint32_t" name="total_ml">Total amount of sprayed liquid in milliliters</field>
+    </message>
     <message id="200" name="GIMBAL_REPORT">
       <description>3 axis gimbal measurements.</description>
       <field type="uint8_t" name="target_system">System ID.</field>
